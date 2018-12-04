@@ -41,7 +41,7 @@ Make sure to check the [`examples`](./examples) folder in this repo for examples
   "builds": [
     {
       "src": "my_executable",
-      "use": "now-static-bin",
+      "use": "now-custom-runtime",
       "config": {
         "maxLambdaSize": "50mb"
         ^^^ NEW
