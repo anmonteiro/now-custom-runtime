@@ -1,0 +1,17 @@
+{
+  "name": "now-custom-runtime-echo",
+  "public": true,
+  "version": 2,
+  "builds": [
+    {
+      "src": "main.exe",
+      "use": "now-custom-runtime"
+    }
+  ],
+  "routes": [
+    {
+      "src": "^/.*",
+      "dest": "/main.exe"
+    }
+  ]
+}

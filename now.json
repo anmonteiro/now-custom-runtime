@@ -1,0 +1,12 @@
+{
+  "name": "now-custom-runtime-examples",
+  "alias": "now-custom-runtime-examples",
+  "public": true,
+  "version": 2,
+  "builds": [
+    {
+      "src": "examples/simple/main.exe",
+      "use": "now-custom-runtime"
+    }
+  ]
+}
