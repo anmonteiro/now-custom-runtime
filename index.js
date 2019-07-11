@@ -3,10 +3,6 @@ const { createLambda } = require('@now/build-utils/lambda.js');
 const rename = require('@now/build-utils/fs/rename.js');
 const objectHash = require('object-hash');
 
-exports.config = {
-  maxLambdaSize: '25mb',
-};
-
 exports.analyze = ({ files, entrypoint, config }) => {
   const entrypointHash = files[entrypoint].digest;
   const objHash = objectHash(config, { algorithm: 'sha256' });

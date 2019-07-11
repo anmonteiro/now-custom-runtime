@@ -29,28 +29,6 @@ Your `now.json` `"builds"` section should look something like this:
 
 Make sure to check the [`examples`](./examples) folder in this repo for examples.
 
-## Limitations
-
-- The
-  [`maxLambdaSize`](https://zeit.co/docs/v2/deployments/concepts/lambdas/#maximum-bundle-size)
-  setting defaults to 25MB. You can override this (up to a limit of 50MB) in the
-  builder config, e.g.:
-
-```json
-{
-  "builds": [
-    {
-      "src": "my_executable",
-      "use": "now-custom-runtime",
-      "config": {
-        "maxLambdaSize": "50mb"
-        ^^^ NEW
-      }
-    }
-  ]
-}
-```
-
 ## Copyright and License
 
 Copyright © 2018 António Nuno Monteiro.
