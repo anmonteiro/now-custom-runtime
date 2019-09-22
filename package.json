@@ -1,6 +1,6 @@
 {
   "name": "now-custom-runtime",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ZEIT Now v2.0 custom runtime builder",
   "main": "index.js",
   "files": [
