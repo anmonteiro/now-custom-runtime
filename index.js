@@ -17,6 +17,11 @@ exports.analyze = ({ files, entrypoint, config }) => {
 };
 
 exports.build = async ({ files, entrypoint }) => {
+  // Set the executable bit for the entrypoint. Somewhere around Now
+  // v16.{2,3}.x they stopped keeping the permissions for files uploaded via
+  // the CLI on deployments.
+  files[entrypoint].mode |= 0o111;
+
   const userFiles = rename(files, name =>
     name === entrypoint ? 'bootstrap' : name,
   );
