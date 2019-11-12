@@ -1,6 +1,8 @@
 # Changelog
 
-## [master](https://github.com/anmonteiro/now-custom-runtime/compare/0.0.3...HEAD)  (unreleased)
+## [master](https://github.com/anmonteiro/now-custom-runtime/compare/0.0.4...HEAD)  (unreleased)
+
+## [0.0.4](https://github.com/anmonteiro/now-custom-runtime/compare/0.0.3...0.0.4) (2019-11-11)
 
 ### Changes
 
