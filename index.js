@@ -3,7 +3,7 @@ const { createLambda } = require('@now/build-utils/lambda.js');
 const rename = require('@now/build-utils/fs/rename.js');
 const objectHash = require('object-hash');
 
-exports.version = 2;
+exports.version = 3;
 
 exports.analyze = ({ files, entrypoint, config }) => {
   const entrypointHash = files[entrypoint].digest;
@@ -27,5 +27,5 @@ exports.build = async ({ files, entrypoint }) => {
     runtime: 'provided',
   });
 
-  return { [entrypoint]: lambda };
+  return { output: lambda };
 };
