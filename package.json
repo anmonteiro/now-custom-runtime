@@ -16,8 +16,14 @@
     "url": "https://github.com/anmonteiro/now-custom-runtime/issues"
   },
   "homepage": "https://github.com/anmonteiro/now-custom-runtime",
+  "scripts": {
+    "build": "tsc"
+  },
   "dependencies": {
-    "@now/build-utils": "^0.4.30",
-    "object-hash": "^1.3.1"
+    "@vercel/build-utils": "^6.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.6",
+    "typescript": "^4.9.5"
   }
 }
